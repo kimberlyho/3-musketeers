@@ -4,23 +4,19 @@ const convert = require('..');
 const Big = require('big.js');
 
 test('should default to returning then default ifself', () => {
-  //convert(2, 'BTC', 'BTC');
-  throw new Error('test not yet defined... write your test here');
+  expect(convert(2, 'BTC', 'BTC')).toEqual(2);
 });
 
 test('should return a number', () => {
-  //convert(2, 'BTC', 'BTC', 'Number');
-  throw new Error('test not yet defined... write your test here');
+  expect(convert(2, 'BTC', 'BTC', 'Number')).toEqual(2);
 });
 
 test('should return a Big number', () => {
-  //convert(2, 'BTC', 'BTC', 'Big');
-  throw new Error('test not yet defined... write your test here');
+  expect(convert(2, 'BTC', 'BTC', 'Big')).toEqual(2222);
 });
 
 test('should return a string', () => {
-  //convert(2100, 'mBTC', 'BTC', 'String');
-  throw new Error('test not yet defined... write your test here');
+  expect(convert(2100, 'mBTC', 'BTC', 'String')).toEqual(2100);
 });
 
 test('should convert a number from interger', () => {

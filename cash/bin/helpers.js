@@ -8,7 +8,7 @@ const config = new Conf();
 
 updateNotifier({pkg}).notify();
 
-/*Set the default config.json file*/
+/**Set the default config.json file*/
 const saveCurrencies = argv => {
   config.set('defaultFrom', argv[1] || config.get('defaultFrom', 'USD'));
   config.set(
@@ -21,13 +21,13 @@ const saveCurrencies = argv => {
   process.exit(1);
 };
 
-/*Set the version*/
+/**Set the version*/
 const version = () => {
   console.log(pkg.version);
   process.exit(1);
 };
 
-/*Set the helper text*/
+/**Set the helper text*/
 const help = () => {
   console.log(`
 Usage:
@@ -60,7 +60,7 @@ Examples:
   process.exit(1);
 };
 
-/*Based on the input calling the helper it outputs either the version, the help or the save command*/
+/**Based on the input calling the helper it outputs either the version, the help or the save command*/
 const helpers = argv => {
   // Version
   if (argv.indexOf('--version') !== - 1 || argv.indexOf('-v') !== - 1) {
