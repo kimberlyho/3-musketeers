@@ -2,7 +2,7 @@
 The library [cash](./cash) can be run using the following command:
 "node /bin/index.js"
 
-Before that we need to install some modules with the command "npm install".
+Before that we need to install some modules with the command "npm install".  
 List of modules to install:
 "conf" : Simple config handling for your app or module,
 "chalk" : Terminal string styling done right,
