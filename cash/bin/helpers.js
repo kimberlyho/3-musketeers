@@ -8,7 +8,9 @@ const config = new Conf();
 
 updateNotifier({pkg}).notify();
 
-/**Set the default config.json file*/
+/**Set the default config.json file
+  argv: array with the default currencies
+*/
 const saveCurrencies = argv => {
   config.set('defaultFrom', argv[1] || config.get('defaultFrom', 'USD'));
   config.set(
@@ -27,7 +29,7 @@ const version = () => {
   process.exit(1);
 };
 
-/**Set the helper text*/
+/**Set the helper text where we can find all the commands available*/
 const help = () => {
   console.log(`
 Usage:
